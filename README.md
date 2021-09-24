@@ -6,7 +6,7 @@
   <!-- <a href="https://ajdavidsongithubio.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Ajdavidson Github Io</h1>
+<h1 align="center">Portfolio of Andrew Davidson</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/ajdavidson/ajdavidson.github.io?color=56BEB8">
