@@ -1,6 +1,6 @@
 
 
-<h1 align="center">:adult: Portfolio of Andrew Davidson</h1>
+<h1 align="center">:office_worker: Portfolio of Andrew Davidson</h1>
 
 ## About ##
 
@@ -8,6 +8,8 @@ This site is a portfolio of my work in the MIT xPro Full Stack Development with 
 
 ## :eight_pointed_black_star: Featured Projects ##
 
-:ballot_box_with_check: Feature 1;\
-:ballot_box_with_check: Feature 2;\
-:ballot_box_with_check: Feature 3;
+:ballot_box_with_check: [Real Time Bus Tracker](https://github.com/ajdavidson/bus-tracker)\
+:ballot_box_with_check: [PacMen](https://github.com/ajdavidson/pacmen)\
+:ballot_box_with_check: [Eye Movement](https://github.com/ajdavidson/eye-movement)
+
+
