@@ -253,33 +253,38 @@
     ================================================== -->
     <section id="intro" class="s-intro">
 
-        <div id="particles-js" class="s-intro__particles"></div>
+        <div id="particles-js" class="s-intro__particles">
+            <img width="90%" style="opacity: 50%" src="images/profile-wh-1080.png">
+        </div>
+
 
         <div class="row s-intro__content">
             <div class="column lg-12">
 
-                <div class="counter">
-                    <div class="counter__time">
-                        <span class="ss-days">365</span>
-                        <span>days</span>
-                    </div>
-                    <div class="counter__time">
-                        <span class="ss-hours">01</span>
-                        <span>hours</span>
-                    </div>
-                    <div class="counter__time minutes">
-                        <span class="ss-minutes">01</span>
-                        <span>mins</span>
-                    </div>
-                    <div class="counter__time">
-                        <span class="ss-seconds">55</span>
-                        <span>secs</span>
-                    </div>
-                </div> <!-- end counter -->
+                <!--  counter  -->
+                <!--                <div class="counter">-->
+                <!--                    <div class="counter__time">-->
+                <!--                        <span class="ss-days">365</span>-->
+                <!--                        <span>days</span>-->
+                <!--                    </div>-->
+                <!--                    <div class="counter__time">-->
+                <!--                        <span class="ss-hours">01</span>-->
+                <!--                        <span>hours</span>-->
+                <!--                    </div>-->
+                <!--                    <div class="counter__time minutes">-->
+                <!--                        <span class="ss-minutes">01</span>-->
+                <!--                        <span>mins</span>-->
+                <!--                    </div>-->
+                <!--                    <div class="counter__time">-->
+                <!--                        <span class="ss-seconds">55</span>-->
+                <!--                        <span>secs</span>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!-- end counter -->
 
                 <div class="s-intro__content-bottom">
-                    <h1 class="s-intro__content-title">Porfolio site is in development.</h1>
-                    <h2 class="s-intro__content-title">Andrew Davidson</h2>
+                    <h1 class="s-intro__content-title">Andrew Davidson</h1>
+                    <h2 class="s-intro__content-title">Portfolio</h2>
                     <p>
                         MIT xPRO Professional Certificate<br>
                         Full Stack Development with MERN
@@ -449,7 +454,9 @@
                                 <div class="services-list__item-content">
                                     <h4 class="item-title">Node npm/npx</h4>
                                     <p>
-                                        Basic node.js foundation in this first module.  Laying the ground for React and Express in the next two trimesters.  Launched projects and packages using the node, npm npx asynchronous event-driven
+                                        Basic node.js foundation in this first module. Laying the ground for React and
+                                        Express in the next two trimesters. Launched projects and packages using the
+                                        node, npm npx asynchronous event-driven
                                         JavaScript runtime. Improved code with node backend including unit testing and
                                         git actions.
                                     </p>
@@ -519,8 +526,45 @@
 
                     <!-- 03 - tab contact -->
                     <div id="tab-contact" class="tab-content__item">
-
+                        <!--  Bus  -->
                         <div class="row tab-content__item-header pro-head">
+                            <div class="column">
+                                <h2>Real Time Bus Tracker</h2>
+                            </div>
+                            <div class="column">
+                                <div style="float:right;">
+                                    <div class="dropdown">
+                                        <button class="button button2"><i class="fas fa-info-circle fa-3x"></i></button>
+                                        <div class="info-content">
+                                            Real Time Bus Tracker uses live data to show up-to-date information
+                                            including position and occupancy... <a
+                                                href="https://github.com/ajdavidson/bus-tracker/blob/main/README.md"
+                                                target="_blank">more <i
+                                                class="fas fa-external-link-alt fa-sm"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="button button1"><i class="fab fa-github fa-3x"></i></button>
+                                        <div class="dropdown-content">
+                                            <a href="https://github.com/ajdavidson/bus-tracker" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> &nbsp;View Repository</a>
+                                            <a href="https://ajdavidson.github.io/bus-tracker/" target="_blank"><i
+                                                    class="fas fa-external-link-alt"></i> &nbsp;View Web Page</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <iframe class="col-mern-frame" src="https://nt.dev/e/27db0ff333e2"
+                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"
+                                        title="Development environment"></iframe>
+                            </div>
+                        </div>
+                        <!--END-->
+                        <!--  pacmen  -->
+                        <div class="row tab-content__item-header pro-head" style="margin-top: 30px;">
                             <div class="column">
                                 <h2>PacMen Factory</h2>
                             </div>
@@ -557,7 +601,8 @@
 
                             </div>
                         </div>
-
+                        <!--  END  -->
+                        <!--  eye  -->
                         <div class="row tab-content__item-header pro-head" style="margin-top: 30px;">
                             <div class="column">
                                 <h2>Eye Movement</h2>
@@ -594,44 +639,7 @@
                                         title="Eye Movement"></iframe>
                             </div>
                         </div>
-
-                        <div class="row tab-content__item-header pro-head" style="margin-top: 30px;">
-                            <div class="column">
-                                <h2>Real Time Bus Tracker</h2>
-                            </div>
-                            <div class="column">
-                                <div style="float:right;">
-                                    <div class="dropdown">
-                                        <button class="button button2"><i class="fas fa-info-circle fa-3x"></i></button>
-                                        <div class="info-content">
-                                            Real Time Bus Tracker uses live data to show up-to-date information
-                                            including position and occupancy... <a
-                                                href="https://github.com/ajdavidson/bus-tracker/blob/main/README.md"
-                                                target="_blank">more <i
-                                                class="fas fa-external-link-alt fa-sm"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown">
-                                        <button class="button button1"><i class="fab fa-github fa-3x"></i></button>
-                                        <div class="dropdown-content">
-                                            <a href="https://github.com/ajdavidson/bus-tracker" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i> &nbsp;View Repository</a>
-                                            <a href="https://ajdavidson.github.io/bus-tracker/" target="_blank"><i
-                                                    class="fas fa-external-link-alt"></i> &nbsp;View Web Page</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column">
-                                <iframe class="col-mern-frame" src="https://nt.dev/e/27db0ff333e2"
-                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"
-                                        title="Development environment"></iframe>
-                            </div>
-                        </div>
-
+                        <!--END-->
 
                     </div> <!-- end 03 - tab contact -->
 
