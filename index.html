@@ -280,7 +280,18 @@
     <!-- # intro
     ================================================== -->
     <section id="intro" class="s-intro">
-
+        <div id="ball" style="
+        z-index: 5;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height:155px;
+        width: 155px;
+        /*border-radius: 50%;*/
+        opacity: 33.3%;
+        background: rgba(255, 255, 255, 0);
+        /*background-image: url(images/nt.png);*/
+      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank"><img src="images/nt.png" height="155px" width="155px"></a></div>
         <div id="particles-js" class="s-intro__particles">
             <!--            <img width="90%" style="opacity: 50%" src="images/profile-wh-1080.png">-->
             <div class="profile-container">
@@ -821,6 +832,34 @@
 <script src="js/main.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/particle-settings.js"></script>
+<script>
+    var velocityX = 3;
+    var velocityY = 1;
+    var positionX = 0;
+    var positionY = 0;
+    var ball = document.getElementById("ball");
+
+    // YOUR CODE
+    // ----------------
+    var time = 35;
+    var edge = 520;
+
+    setInterval(function () {
+        positionX += velocityX;
+        ball.style.left = positionX + "px";
+        positionY += velocityY;
+        ball.style.top = positionY + "px";
+        //  use additive inverse of velocity at an edge to change direction
+        if (positionX <= 0 || positionX >= window.innerWidth-165) {
+            velocityX *= -1;
+            console.log("VX is: " + velocityX + "  VY is: " + velocityY);
+        }
+        if (positionY <= 0 || positionY >= window.innerHeight-155) {
+            velocityY *= -1;
+            console.log("VX is: " + velocityX + "  VY is: " + velocityY);
+        }
+    }, time);
+</script>
 </body>
 
 </html>
