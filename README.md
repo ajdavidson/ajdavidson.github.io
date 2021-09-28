@@ -1,6 +1,6 @@
 
 
-<h1 align="center">:office_worker: Portfolio of Andrew Davidson</h1>
+<h1 align="center">:man_office_worker: Portfolio of Andrew Davidson</h1>
 
 ## About ##
 
