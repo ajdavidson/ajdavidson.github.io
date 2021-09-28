@@ -8,8 +8,8 @@
 
 ## :eight_pointed_black_star: Featured Projects ##
 
-:ballot_box_with_check: [ Real Time Bus Tracker](https://github.com/ajdavidson/bus-tracker)\
-:ballot_box_with_check: [ PacMen](https://github.com/ajdavidson/pacmen)\
-:ballot_box_with_check: [ Eye Movement](https://github.com/ajdavidson/eye-movement)
+:ballot_box_with_check: [&nbsp;Real Time Bus Tracker](https://github.com/ajdavidson/bus-tracker)\
+:ballot_box_with_check: [&nbsp;PacMen](https://github.com/ajdavidson/pacmen)\
+:ballot_box_with_check: [&nbsp;Eye Movement](https://github.com/ajdavidson/eye-movement)
 
 
