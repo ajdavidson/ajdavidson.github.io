@@ -285,13 +285,13 @@
         position: absolute;
         left: 0px;
         top: 0px;
+        height:155px;
         width: 155px;
-        height: 155px;
         /*border-radius: 50%;*/
         opacity: 33.3%;
         background: rgba(255, 255, 255, 0);
-        /*background-image: url(images/nt.svg);*/
-      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank"><img src="images/nt.svg" alt=""></a></div>
+        /*background-image: url(images/nt.png);*/
+      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank"><img src="images/nt.png" height="155px" width="155px"></a></div>
         <div id="particles-js" class="s-intro__particles">
             <!--            <img width="90%" style="opacity: 50%" src="images/profile-wh-1080.png">-->
             <div class="profile-container">
@@ -850,11 +850,11 @@
         positionY += velocityY;
         ball.style.top = positionY + "px";
         //  use additive inverse of velocity at an edge to change direction
-        if (positionX <= 0 || positionX >= window.innerWidth-175) {
+        if (positionX <= 0 || positionX >= window.innerWidth-165) {
             velocityX *= -1;
             console.log("VX is: " + velocityX + "  VY is: " + velocityY);
         }
-        if (positionY <= 0 || positionY >= window.innerHeight-175) {
+        if (positionY <= 0 || positionY >= window.innerHeight-155) {
             velocityY *= -1;
             console.log("VX is: " + velocityX + "  VY is: " + velocityY);
         }
