@@ -223,7 +223,7 @@
             msg += "A new tab will open with";
             msg += newLine;
             msg += "more of my recent projects wrapped";
-            msg+= newLine;
+            msg += newLine;
             msg += "in a next.tech playground...Enjoy";
             alert(msg);
         }
@@ -306,7 +306,8 @@
         background: rgba(255, 255, 255, 0);
        margin: 0;
        padding: 0;
-      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank" onclick="egg()"><img src="images/nt.png"></a></div>
+      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank" onclick="egg()"><img src="images/nt.png"></a>
+        </div>
         <div id="particles-js" class="s-intro__particles">
             <div class="profile-container">
                 <img class="profile-pic" src="images/profile-1080-sq.png" height="40%" width="40%"/></div>
@@ -429,10 +430,6 @@
                                             github.com/ajdavidson</a>
                                     </li>
                                 </ul>
-                                <a href="mailto:drew@teamdenver.com">
-                                    <i class="fa fa-envelope fa-sm"></i>
-                                    <span class="screen-reader-text">Email</span>
-                                </a>
                                 <!---->
                             </div>
                             <div class="column">
@@ -458,8 +455,11 @@
                                     Weekly testing and grading. I am wrapping up the first trimester covering web
                                     development with JavaScript. Built pages and projects using the latest techniques on
                                     the most up to date versions of frontend languages with modern tools such as VS Code
-                                    and GitHub. Trained on many supporting methods, technologies, and API as well.
-
+                                    and GitHub. Trained on many supporting methods, technologies, and API as well. If
+                                    you would like to contact me the best way is email <a
+                                        href="mailto:drew@teamdenver.com">
+                                    <i class="fa fa-envelope fa-sm"></i>
+                                    <span class="screen-reader-text">Email</span></a>
                                 </p>
                             </div>
                         </div>
@@ -621,9 +621,9 @@
                         </div>
                         <div class="row">
                             <div class="column">
-<!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/27db0ff333e2"-->
-<!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
-<!--                                        title="Development environment"></iframe>-->
+                                <!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/27db0ff333e2"-->
+                                <!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
+                                <!--                                        title="Development environment"></iframe>-->
                                 <!-- Copy and Paste Me -->
                                 <div class="glitch-embed-wrap" style="height: 500px; width: 100%;">
                                     <iframe
@@ -668,9 +668,9 @@
 
                         <div class="row">
                             <div class="column">
-<!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/0f6fd66de9f0"-->
-<!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
-<!--                                        title="Development environment"></iframe>-->
+                                <!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/0f6fd66de9f0"-->
+                                <!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
+                                <!--                                        title="Development environment"></iframe>-->
                                 <!-- Copy and Paste Me -->
                                 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
                                     <iframe
@@ -716,9 +716,9 @@
 
                         <div class="row">
                             <div class="column">
-<!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/7cf2a6aaedcf"-->
-<!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
-<!--                                        title="Eye Movement"></iframe>-->
+                                <!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/7cf2a6aaedcf"-->
+                                <!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
+                                <!--                                        title="Eye Movement"></iframe>-->
                                 <!-- Copy and Paste Me -->
                                 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
                                     <iframe
@@ -875,11 +875,11 @@
         positionY += velocityY;
         ball.style.top = positionY + "px";
         //  use additive inverse of velocity at an edge to change direction
-        if (positionX <= 0 || positionX >= window.innerWidth-165) {
+        if (positionX <= 0 || positionX >= window.innerWidth - 165) {
             velocityX *= -1;
             console.log("VX is: " + velocityX + "  VY is: " + velocityY);
         }
-        if (positionY <= 0 || positionY >= window.innerHeight-155) {
+        if (positionY <= 0 || positionY >= window.innerHeight - 155) {
             velocityY *= -1;
             console.log("VX is: " + velocityX + "  VY is: " + velocityY);
         }
