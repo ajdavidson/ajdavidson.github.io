@@ -214,6 +214,20 @@
         /*    background-color: #3e8e41;*/
         /*}*/
     </style>
+    <script>
+        function egg() {
+            var newLine = "\r\n"
+            var msg = "You found an Easter Egg!"
+            msg += newLine;
+            msg += newLine;
+            msg += "A new tab will open with";
+            msg += newLine;
+            msg += "more of my recent projects wrapped";
+            msg+= newLine;
+            msg += "in a next.tech playground...Enjoy";
+            alert(msg);
+        }
+    </script>
 </head>
 
 <body id="top" class="theme-particles">
@@ -280,20 +294,20 @@
     <!-- # intro
     ================================================== -->
     <section id="intro" class="s-intro">
-        <div id="ball" style="
+        <div id="floater" style="
         z-index: 5;
         position: absolute;
         left: 0px;
         top: 0px;
-        height:155px;
+        height:79px;
         width: 155px;
         /*border-radius: 50%;*/
         opacity: 33.3%;
         background: rgba(255, 255, 255, 0);
-        /*background-image: url(images/nt.png);*/
-      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank"><img src="images/nt.png" height="155px" width="155px"></a></div>
+       margin: 0;
+       padding: 0;
+      "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank" onclick="egg()"><img src="images/nt.png"></a></div>
         <div id="particles-js" class="s-intro__particles">
-            <!--            <img width="90%" style="opacity: 50%" src="images/profile-wh-1080.png">-->
             <div class="profile-container">
                 <img class="profile-pic" src="images/profile-1080-sq.png" height="40%" width="40%"/></div>
         </div>
@@ -607,9 +621,18 @@
                         </div>
                         <div class="row">
                             <div class="column">
-                                <iframe class="col-mern-frame" src="https://nt.dev/e/27db0ff333e2"
-                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"
-                                        title="Development environment"></iframe>
+<!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/27db0ff333e2"-->
+<!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
+<!--                                        title="Development environment"></iframe>-->
+                                <!-- Copy and Paste Me -->
+                                <div class="glitch-embed-wrap" style="height: 600px; width: 100%;">
+                                    <iframe
+                                            src="https://glitch.com/embed/#!/embed/bus-tracker?path=index.html&previewSize=100"
+                                            title="Real Time Bus Tracker"
+                                            allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+                                            style="height: 100%; width: 100%; border: 0;">
+                                    </iframe>
+                                </div>
                             </div>
                         </div>
                         <!--END-->
@@ -645,9 +668,18 @@
 
                         <div class="row">
                             <div class="column">
-                                <iframe class="col-mern-frame" src="https://nt.dev/e/0f6fd66de9f0"
-                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"
-                                        title="Development environment"></iframe>
+<!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/0f6fd66de9f0"-->
+<!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
+<!--                                        title="Development environment"></iframe>-->
+                                <!-- Copy and Paste Me -->
+                                <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+                                    <iframe
+                                            src="https://glitch.com/embed/#!/embed/pacmen?path=index.html&previewSize=100"
+                                            title="pacmen on Glitch"
+                                            allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+                                            style="height: 100%; width: 100%; border: 0;">
+                                    </iframe>
+                                </div>
 
                             </div>
                         </div>
@@ -684,9 +716,18 @@
 
                         <div class="row">
                             <div class="column">
-                                <iframe class="col-mern-frame" src="https://nt.dev/e/7cf2a6aaedcf"
-                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"
-                                        title="Eye Movement"></iframe>
+<!--                                <iframe class="col-mern-frame" src="https://nt.dev/e/7cf2a6aaedcf"-->
+<!--                                        style="width:100%;height:calc(350px + 8vw);overflow:hidden;"-->
+<!--                                        title="Eye Movement"></iframe>-->
+                                <!-- Copy and Paste Me -->
+                                <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+                                    <iframe
+                                            src="https://glitch.com/embed/#!/embed/eye-movement?path=README.md&previewSize=100"
+                                            title="eye-movement on Glitch"
+                                            allow="geolocation; microphone; camera; midi; vr; encrypted-media"
+                                            style="height: 100%; width: 100%; border: 0;">
+                                    </iframe>
+                                </div>
                             </div>
                         </div>
                         <!--END-->
@@ -821,7 +862,7 @@
     var velocityY = 1;
     var positionX = 0;
     var positionY = 0;
-    var ball = document.getElementById("ball");
+    var ball = document.getElementById("floater");
 
     // YOUR CODE
     // ----------------
