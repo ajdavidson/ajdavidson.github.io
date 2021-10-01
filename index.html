@@ -18,321 +18,16 @@
     ================================================== -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css">
-
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/comets.css">
 
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <style>
-        /*     page blue #034f4b     */
-        /*  MERN
-            #3ea041
-            #cd7871
-            #26618f
-            #9cc24b
-        */
-        .profile-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
-        .profile-pic {
-            position: absolute;
-            opacity: 50%;
-            right: 20%;
-        }
-
-        .bio-pic {
-            float: left;
-            border-radius: 50%;
-            margin-right: 30px;
-            margin-bottom: 5px;
-            padding: 0px;
-            border: 5px solid #26618f;
-            shape-outside: circle(50%);
-        }
-
-        .social-bio {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .col-video {
-            text-align: center;
-            vertical-align: middle;
-            display: table-cell;
-        }
-
-        .col-mern-frame {
-            border: 10px solid;
-            border-top-color: #3ea041;
-            border-right-color: #cd7871;
-            border-bottom-color: #26618f;
-            border-left-color: #9cc24b;
-            border-radius: 7px;
-            margin: 0;
-            padding: 0;
-        }
-
-        /*.button i {*/
-        /*    vertical-align: -5px;*/
-        /*}*/
-
-        .button {
-            /*background-color: #4CAF50; !* Green *!*/
-            border: none;
-            border-radius: 7px;
-            color: white;
-            padding: 10px 15px 10px 18px;
-            /*text-align: center;*/
-            /*text-decoration: none;*/
-            /*font-size: 12px;*/
-            display: inline-block;
-            margin: 0px;
-            transition-duration: 0.8s;
-            cursor: pointer;
-            pointer-events: none;
-            /*float: right;*/
-        }
-
-        .button1 {
-            background-color: transparent;
-            color: #26618f;
-        }
-
-        .button2 {
-            background-color: transparent;
-            color: #26618f;
-            border: none;
-        }
-
-        .button1:hover {
-            background-color: transparent;
-            border-color: #3ea041;
-            color: white;
-        }
-
-        .button:visited, .button:active {
-            background-color: transparent;
-            color: #26618f;
-            border: 2px solid #26618f;
-        }
-
-        .pro-head {
-            height: 55px;
-        }
-
-        /*.dropbtn {*/
-        /*    background-color: #4CAF50;*/
-        /*    color: white;*/
-        /*    padding: 16px;*/
-        /*    font-size: 16px;*/
-        /*    border: none;*/
-        /*    cursor: pointer;*/
-        /*}*/
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            border-radius: 5px;
-            background-color: white;
-            border: 2px solid #26618f;
-            position: absolute;
-            right: 20px;
-            top: 50px;
-            width: 175px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-            font-size: 16px;
-        }
-
-        .dropdown-content a {
-            color: #26618f;
-            padding: 10px 10px;
-            text-decoration: none;
-            display: block;
-            border-radius: 5px;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #cc5252;
-            color: white;
-            border-radius: 5px;
-            transition-duration: 0.5s;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-            border-radius: 7px;
-        }
-
-        .info-content {
-            display: none;
-            border-radius: 5px;
-            background-color: white;
-            border: 2px solid #26618f;
-            color: #26618f;
-            position: absolute;
-            right: 20px;
-            top: 50px;
-            width: 275px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-            font-size: 16px;
-            padding: 0px 10px 0 15px;
-            /*pointer-events: none;*/
-        }
-
-        .dropdown:hover .info-content {
-            display: block;
-            border-radius: 7px;
-        }
-
-        .info-content a:hover {
-            color: #cc5252;
-        }
-
-        .services-list__item-content a {
-            color: #000;
-        }
-
-        .services-list__item-content a:hover {
-            color: #cc5252;
-        }
-
-        /*.dropdown:hover .dropbtn {*/
-        /*    background-color: #3e8e41;*/
-        /*}*/
-
-        /* comets animations */
-
-        #comets{
-            position:absolute;
-            top:-150px;
-            width:100vw;
-            text-align: left;
-            height: 100%;
-            min-height: 900px;
-            overflow:hidden;
-            z-index: 3;
-        }
-
-        #comets i {
-            display: inline-block;
-            width: 250px;
-            height: 150px;position:absolute;
-            border-radius: 5% 40% 70%;
-            box-shadow: inset 0px 0px 1px #294b67;
-            border: 1px solid #333;
-            z-index: 1;
-            background-color: #fff;
-            opacity: .7;
-            -webkit-animation: falling 10s 0s infinite;
-            -webkit-animation-timing-function:ease-in;
-        }
-
-
-        #comets i:nth-child(1){
-            left: 20vw;
-            height:73px;
-            width:3px;
-            background-color: #fff;
-        }
-        #comets i:nth-child(3){
-            height:11px;
-            width:3px;
-            height:35px;
-            -webkit-animation: falling3 8s 3s infinite;
-            left: 3vw;
-            background-color: #fff;
-        }
-        #comets i:nth-child(2){
-            -webkit-animation: falling2 6s 1s infinite;
-            left: 45vw;
-            height:70px;
-            width:4px;
-            background-color: #fff;
-
-        }
-
-
-
-
-        @-webkit-keyframes falling {
-
-            0% {
-                -webkit-transform: translate3d(100px,0px,0px) rotate(160deg);
-            }
-
-            3% {
-                -webkit-transform:
-                        translate3d(450px,900px,0) rotate(160deg);
-                opacity: 0;
-            }
-            100% {
-                -webkit-transform:
-                        translate3d(450px,900px,0) rotate(160deg);
-                opacity: 0;
-            }
-        }
-
-        @-webkit-keyframes falling3 {
-            0% {
-                -webkit-transform: translate3d(0,0,0) rotate(150deg);
-            }
-
-            10% {
-                -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
-                opacity: 0;
-            }
-        }
-
-        @-webkit-keyframes falling2 {
-            0% {
-                -webkit-transform:translate3d(100px,0,0) rotate(130deg);
-            }
-
-            15% {
-                -webkit-transform:translate3d(800px,580px,0) rotate(130deg);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translate3d(800px,680px,0) rotate(180deg);
-                opacity: 0;
-            }
-        }
-    </style>
-    <script>
-        function egg() {
-            var newLine = "\r\n"
-            var msg = "You found an Easter Egg!"
-            msg += newLine;
-            msg += newLine;
-            msg += "A new tab will open with";
-            msg += newLine;
-            msg += "more of my recent projects wrapped";
-            msg += newLine;
-            msg += "in a next.tech playground...Enjoy";
-            alert(msg);
-        }
-    </script>
 </head>
 
 <body id="top" class="theme-particles">
@@ -399,6 +94,8 @@
     <!-- # intro
     ================================================== -->
     <section id="intro" class="s-intro">
+
+        <!--  floater  -->
         <div id="floater" style="
         z-index: 5;
         position: absolute;
@@ -413,13 +110,23 @@
        padding: 0;
       "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank" onclick="egg()"><img src="images/nt.png"></a>
         </div>
+        <!---->
 
+        <!--     comets     -->
+        <div id="comets">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <!---->
+
+        <!--   particles   -->
         <div id="particles-js" class="s-intro__particles">
             <div class="profile-container">
                 <img class="profile-pic" src="images/profile-1080-sq.png" height="40%" width="40%"/></div>
 
         </div>
-
+        <!---->
 
         <div class="row s-intro__content">
             <div class="column lg-12">
@@ -451,11 +158,6 @@
                         MIT xPRO Professional Certificate<br>
                         Full Stack Development with MERN
                     </p>
-                </div>
-                <div id="comets">
-                    <i></i>
-                    <i></i>
-                    <i></i>
                 </div>
             </div>
 
@@ -567,7 +269,8 @@
                                     the most up to date versions of frontend languages with modern tools such as VS Code
                                     and GitHub. Trained on many supporting methods, technologies, and API as well. The
                                     best way to contact me is [ <a href="mailto:drew@teamdenver.com" target="_blank"><i
-                                        class="fa fa-envelope fa-sm"></i><span class="screen-reader-text">Email</span></a> ]
+                                        class="fa fa-envelope fa-sm"></i><span
+                                        class="screen-reader-text">Email</span></a> ]
                                 </p>
                             </div>
                         </div>
@@ -608,7 +311,8 @@
                                         Improved skills and efficiency with knowledge and implementation of Test Driven
                                         Development (TDD) and Behavior Driven Development (BDD) unit testing systems:
                                         Jest, and Mocha with Chai. Produced HTML reporting with Mocha awesome. As seen
-                                        in this project <a href="https://ajdavidson.github.io/awesomocha/" target="_blank">Mocha Awesome
+                                        in this project <a href="https://ajdavidson.github.io/awesomocha/"
+                                                           target="_blank">Mocha Awesome
                                         HTML Report <i class="fas fa-external-link-alt fa-xs"></i></a>
                                     </p>
                                 </div>
@@ -686,8 +390,9 @@
                                         and private keys via CLI including file hash generation with signing and
                                         testing. Moved on to Encryption and Decryption In Kerberos email server
                                         scenario. Reverse engineered a block HASH program to customise: <a
-                                            href="https://ajdavidson.github.io/block-hash-demo/" target="_blank">Blockies <i
-                                            class="fas fa-external-link-alt fa-xs"></i></a>.
+                                            href="https://ajdavidson.github.io/block-hash-demo/" target="_blank">Blockies
+                                        <i
+                                                class="fas fa-external-link-alt fa-xs"></i></a>.
                                     </p>
                                 </div>
                             </div>
@@ -965,34 +670,43 @@
 <script src="js/main.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/particle-settings.js"></script>
-<script>
-    var velocityX = 3;
-    var velocityY = 1;
-    var positionX = 0;
-    var positionY = 0;
-    var ball = document.getElementById("floater");
-
-    // YOUR CODE
-    // ----------------
-    var time = 35;
-    var edge = 520;
-
-    setInterval(function () {
-        positionX += velocityX;
-        ball.style.left = positionX + "px";
-        positionY += velocityY;
-        ball.style.top = positionY + "px";
-        //  use additive inverse of velocity at an edge to change direction
-        if (positionX <= 0 || positionX >= window.innerWidth - 165) {
-            velocityX *= -1;
-            console.log("VX is: " + velocityX + "  VY is: " + velocityY);
-        }
-        if (positionY <= 0 || positionY >= window.innerHeight - 155) {
-            velocityY *= -1;
-            console.log("VX is: " + velocityX + "  VY is: " + velocityY);
-        }
-    }, time);
-</script>
+<script src="js/floater.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function egg() {
+        var newLine = "\r\n"
+        var msg = "You found an Easter Egg!"
+        msg += newLine;
+        msg += newLine;
+        msg += "A new tab will open with";
+        msg += newLine;
+        msg += "more of my recent projects wrapped";
+        msg += newLine;
+        msg += "in a next.tech playground...Enjoy";
+        alert(msg);
+    }
+</script>
