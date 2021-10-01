@@ -214,16 +214,18 @@
         /*.dropdown:hover .dropbtn {*/
         /*    background-color: #3e8e41;*/
         /*}*/
+
         /* comets animations */
 
         #comets{
-            position:relative;
+            position:absolute;
             top:-150px;
             width:100vw;
             text-align: left;
             height: 100%;
             min-height: 900px;
             overflow:hidden;
+            z-index: 3;
         }
 
         #comets i {
@@ -411,19 +413,16 @@
        padding: 0;
       "><a href="https://ajdavidson.github.io/next-tech-sbx/" target="_blank" onclick="egg()"><img src="images/nt.png"></a>
         </div>
+
         <div id="particles-js" class="s-intro__particles">
             <div class="profile-container">
                 <img class="profile-pic" src="images/profile-1080-sq.png" height="40%" width="40%"/></div>
+
         </div>
 
 
         <div class="row s-intro__content">
             <div class="column lg-12">
-                <div id="comets">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
                 <!--  counter  -->
                 <!--                <div class="counter">-->
                 <!--                    <div class="counter__time">-->
@@ -453,7 +452,11 @@
                         Full Stack Development with MERN
                     </p>
                 </div>
-
+                <div id="comets">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
             </div>
 
             <div class="s-intro__scroll">
